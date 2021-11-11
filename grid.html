@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    
+
+    <style>
+        body{
+            background-color: rgb(203, 222, 135);
+            /* width: 400px;
+            height: 500px;
+            align-items: center; */
+        }
+        .container{
+            display: grid;
+            
+            height: 200px;
+            background-color:rgba(red, green, blue, alpha)        
+            grid-column: 15px;
+            grid-template-columns: 150px auto auto;
+            align-items: center;
+            
+           
+
+        }
+        .box1{
+            background-color: rgb(183, 0, 255);
+            color: rgb(192, 192, 245);
+            border: 2px solid rgb(46, 24, 24);
+            width: 100px;
+            height: 150px;
+             margin: 10px;
+            padding: 15px;
+            
+             border-radius: 10px;
+
+        }
+        .box1m{
+            background-color: black;
+            height: 450px;
+            width:300px ;
+            color: white;
+            list-style: square;
+
+            
+            grid-row-start: 1;
+            grid-row-end: 3;
+            g
+        }
+      
+    
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box1m">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, </div>
+        <div class="box1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam.</div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quod, t?
+        </div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae soluta, ?</div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur a. Aliquam, repellendus.
+
+        </div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. modi eos iusto? exercitationem!</div>
+
+
+     
+  </div>
+  
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
