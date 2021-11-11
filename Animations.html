@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* All the comments are use to just for better understanding */
+        body{
+            background-color:black;
+            /* margin: 10px;
+            padding: 15px;  */
+        }
+        .container{
+             /* margin: 10px;
+            padding: 15px; 
+            */
+            /* background-color: black; */
+            height: 500px; 
+            width: 3000px;
+        }
+        .box{
+           
+            width: 300px;
+            background-color: rgb(96, 177, 244);
+            color: rgb(19, 24, 27);
+            height: 100px;
+            animation-name: mostafa;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation: iteration count 5px;;
+            
+           
+            animation-direction: normal;
+            /* margin: 15px;
+            padding: 10px; 
+            */
+        }
+        .main{
+            height: 900px;
+            background-color: blue;
+            
+        }
+        .progress{
+            background-color: red;
+            height: 2px;
+            animation-name: load;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+        }
+        @keyframes mostafa {
+            from{
+                width: 500px;
+                height: 250px;
+            }
+            to{
+                width: 500px;
+                height: 250px;
+            }
+            
+        }
+        @keyframes load {
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 90vw;
+            }
+            100%{
+                width: 100vw;
+            }
+            
+        }
+        @keyframes mostafa1 {
+            0%{
+                width: 30px;
+                height:30px;
+            }
+            40%{
+                width: 150px;
+                height: 100px;
+            }
+            100%{
+                width: 200px;
+                height: 150px;
+            }
+            
+        }
+        img{
+            margin: 15px;
+            animation-name: mostafa;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            
+            animation-iteration-count: 3;
+            animation-direction: normal;
+
+        }
+        img{
+            margin: 15px;
+            animation-name: mostafa1;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            
+            animation-iteration-count: 3;
+            animation-direction: normal;
+
+        }
+        /* .div p{
+            align-items: center;
+            color: black;
+            background-color: white;
+
+        } */
+        .container2{
+            /* margin: 50px;
+            padding: 8px;
+            align-items: center; */
+           
+            /* background-color: black; */
+            /* border: 5px solid red; */
+            /* color: white; */
+            /* transform: translate(30px); */
+            transform: skew(2deg,4deg);
+            
+            display: inline;
+        }
+        div p{
+            color: white;
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(3600deg);
+            }
+            
+            
+        }
+        .rotate img{
+            animation-name: rotate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            width: 60px;
+            height: 50px;
+    
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <head></head>
+    <main>
+
+    </main>
+    <div class="rotate">
+        <img src="dragon.png" alt="">
+    </div>
+    
+    <div class="container">
+        <div class="box">
+            
+            
+        </div>
+        <p>XXXTENTACION</p>
+        <img src="XXXTENTACION-main.jpg" alt="" width="300px">  </div>
+    <div class="container2">
+        <p>unsplash img</p>
+        <img src="https://source.unsplash.com/500x150/?xxxtentacion" alt="">
+    </div>
+
+    
+</body>
+</html>
